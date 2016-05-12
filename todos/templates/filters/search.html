@@ -1,0 +1,16 @@
+<style>
+    div {
+        width: 400px;
+        display: block;
+        margin: auto;
+        align-content: center;
+    }
+    input {
+        width: 200px;
+        padding: 5px;
+        font-size: large;
+    }
+</style>
+<div>
+    <label>Search within Todo: </label><input type="text" #keyword (input)="search.emit(keyword.value)">
+</div>

@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title>Angular 2 QuickStart JS</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfill -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.umd.js"></script>
+    
+    <script src="node_modules/@angular/core/core.umd.js"></script>
+    <script src="node_modules/@angular/common/common.umd.js"></script>
+    <script src="node_modules/@angular/compiler/compiler.umd.js"></script>
+    <script src="node_modules/@angular/platform-browser/platform-browser.umd.js"></script>
+    <script src="node_modules/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js"></script>
+
+    <script src="node_modules/@angular/router-deprecated/router-deprecated.umd.js"></script>
+    <script src="node_modules/@angular/http/http.umd.js"></script>
+    <script src="node_modules/@angular/upgrade/upgrade.umd.js"></script>
+
+
+
+
+    <!-- 2. Load our 'modules' -->
+    <script src='helloworld/hellocomponent.js'></script>
+
+
+    <script src="hellohttp/hellohttp.js"></script>
+
+
+    <script src="hellolist/display.component.js"></script>
+
+
+    <script src="helloservice/helloservice.js"></script>
+
+
+    <script src="hellohierarchy/compHierachy.js"></script>
+
+
+    <link href="listadddelete/todos.css" rel="stylesheet" type="text/css"/>
+    <script src="listadddelete/components/todos/todos.js"></script>
+    <script src="listadddelete/boot.js"></script>
+
+
+    <script src="routercontain/app.routes.js"></script>
+
+
+    <script src="routerhometest/namespace.js"></script>
+    <script src="routerhometest/people.service.js"></script>
+    <script src="routerhometest/home.component.js"></script>
+    <script src="routerhometest/test.component.js"></script>
+    <script src="routerhometest/app.js"></script>
+    <script src="routerhometest/bootstrap.js"></script>
+
+
+    <script src='todos/models/todos/todo.model.js'></script>
+    <script src='todos/services/todos/todoService.js'></script>
+    <script src='todos/pipes/status.js'></script>
+    <script src='todos/pipes/search.js'></script>
+    <script src='todos/components/filters/search.js'></script>
+    <script src='todos/components/filters/status.js'></script>
+    <script src='todos/components/todos/input.js'></script>
+    <script src='todos/components/todos/item.js'></script>
+    <script src='todos/components/todos/list.js'></script>
+    <script src='todos/components/todos/container.js'></script>
+    <script src='todos/components/app.component.js'></script>
+    <script src='todos/boot.js'></script>
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+    <br><br><br><br><br><br>
+
+    <hello>Loading Hello component...</hello> 
+    <br><br><br><br><br><br>
+
+    <display>Loading Display component...</display>
+    <br><br><br><br><br><br>
+
+    <cmp>Loading cmp...</cmp>
+    <br><br><br><br><br><br>
+
+    <hello-app></hello-app>
+    <br><br><br><br><br><br>
+
+    <todos class="todos"></todos>
+    <br><br><br><br><br><br>
+
+    <my-routes></my-routes>
+    <br><br><br><br><br><br>
+
+    <hometest></hometest>
+    <br><br><br><br><br><br>
+
+    <todos-app>Loading...</todos-app>
+  </body>
+
+</html>

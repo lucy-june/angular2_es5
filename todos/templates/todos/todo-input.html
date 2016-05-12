@@ -1,0 +1,18 @@
+<style>
+    div {
+        width: 400px;
+        display: block;
+        margin: auto;
+        align-content: center;
+    }
+    input {
+        width: 230px;
+        padding: 5px;
+        font-size: large;
+    }
+</style>
+<div>
+    <form (submit)="onSubmit()">
+        <label for="title">Add new Todo: </label><input id="title" type="text" [(ngModel)]="todoModel.title">
+    </form>
+</div>

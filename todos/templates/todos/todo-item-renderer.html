@@ -1,0 +1,21 @@
+<style>
+    .completed {
+        text-decoration: line-through;
+    }
+    button {
+        padding: 10px;
+    }
+    div {
+        width: 150px;
+        display: inline-flex;
+        margin: 5px;
+    }
+    div.title{
+        font-size: large;
+        text-transform: capitalize;
+    }
+</style>
+<section>
+    <div class="title" [ngClass]="todo.status">{{todo.title}}</div>
+    <div><button (click)="toggle.emit(todo)">{{todo.status=='completed' ? 'revert to started' : 'mark as completed'}}</button></div>
+</section>

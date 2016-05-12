@@ -1,0 +1,28 @@
+<style>
+    div {
+        display: inline-flex;
+        margin: 5px;
+    }
+    div a.active {
+        color: blue;
+        text-decoration: underline;
+    }
+    div a {
+        color: darkgrey;
+        padding: 10px;
+    }
+    section {
+        width: 400px;
+        display: block;
+        margin: auto;
+        align-content: center;
+    }
+</style>
+<section>
+    <div>Filter by Status:</div>
+    <div>
+        <a [ngClass]="currentFilter=='all' ? 'active' : ''" (click)="onFilterSelect('all')">all</a>
+        <a [ngClass]="currentFilter=='started' ? 'active' : ''" (click)="onFilterSelect('started')">started</a>
+        <a [ngClass]="currentFilter=='completed' ? 'active' : ''" (click)="onFilterSelect('completed')">completed</a>
+    </div>
+</section>

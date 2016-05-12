@@ -1,0 +1,26 @@
+<style>
+    div {
+        width: 400px;
+        display: block;
+        margin: auto;
+        align-content: center;
+        padding: 5px;
+    }
+</style>
+<div>
+    <div>
+        <todo-input></todo-input>
+    </div>
+    <div>
+        <search-filter (search)="term = $event"></search-filter>
+    </div>
+    <div>
+        <status-filter (status)="status = $event"></status-filter>
+    </div>
+    <div>
+    <todo-list
+            [status]="status"
+            [term]="term">
+    </todo-list>
+    </div>
+</div>
