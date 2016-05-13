@@ -6,6 +6,7 @@
             pipes: [app.Pipes.SearchTodo, app.Pipes.StatusFilterTodo],
             inputs:["status", "term"],
             directives: [app.Todos.TodoItemComponent],
+            providers:[app.Services.TodoService],
             templateUrl: '/todos/templates/todos/todo-list.html'
         })
             .Class({

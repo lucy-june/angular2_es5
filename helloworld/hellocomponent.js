@@ -1,5 +1,5 @@
 (function(app) {
-  app.AppComponent =
+  app.AppComponent2 =
     ng.core.Component({
       selector: 'my-app',
       templateUrl: 'helloworld/hellocomponent.html'
@@ -9,7 +9,7 @@
     });
 
   document.addEventListener('DOMContentLoaded', function() {
-    ng.platformBrowserDynamic.bootstrap(app.AppComponent);
+    ng.platformBrowserDynamic.bootstrap(app.AppComponent2);
   });
 })(window.app || (window.app = {}));
 

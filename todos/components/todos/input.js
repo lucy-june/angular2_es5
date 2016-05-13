@@ -6,6 +6,7 @@
     app.Todos.TodoInput =
         ng.core.Component({
             selector: 'todo-input',
+            providers:[app.Services.TodoService],
             templateUrl: '/todos/templates/todos/todo-input.html'
         })
             .Class({
