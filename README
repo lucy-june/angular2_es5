@@ -1,0 +1,7 @@
+[prerequisite]
+node v4.4.4
+npm v3.8.9
+
+[commands]
+npm install
+npm start
